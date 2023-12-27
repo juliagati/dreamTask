@@ -1,0 +1,5 @@
+{
+  "environment": "local",
+  "serverAddress": "localhost",
+  "port": "9001"
+}
