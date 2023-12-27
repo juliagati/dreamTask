@@ -26,7 +26,7 @@ class TestMicroservice:
         socket_client.send_data('0F')
         response = socket_client.receive_data()
         TestUtils.log_assert(response == "0", "Unknown comment Test",
-                             "expected response : 0 not equal to received response : " + str(response))
+                             "expected response : 0 not equal to received response : " + response)
 
     @allure.story('test_sequence_of_commands')
     def test_sequence_of_commands(self, socket_client):
@@ -38,7 +38,7 @@ class TestMicroservice:
         socket_client.send_data('0D')
         response = socket_client.receive_data()
         TestUtils.log_assert(response == "5", "Counting comments Test",
-                             "expected response : 5 not equal to received response : " + str(response))
+                             "expected response : 5 not equal to received response : " + response)
 
     @allure.story('test_long_running_process_execution')
     def test_long_running_process_execution(self, socket_client):
