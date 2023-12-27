@@ -13,7 +13,7 @@ All test results are displayed in allure deshboard  <br>
 
 install docker and load the image <br>
 install pytest <br>
-install allur-pytest <br>
+install allure-pytest <br>
 
 ## Step By Step
 
